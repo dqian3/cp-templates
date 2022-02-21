@@ -6,6 +6,7 @@ using namespace std;
 
 typedef long long ll;
 
+// Segment tree that supports assignment over ranges with lazy propagation
 
 struct st {
 

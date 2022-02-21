@@ -4,11 +4,9 @@ using namespace std;
 
 typedef long long ll;
 
-#define IDENT 0
+// Basic Segment tree that supports updates and range queries
 
-ll op(ll a, ll b) {
-	return a + b;
-}
+#define IDENT 0
 
 struct st {
 
@@ -16,6 +14,10 @@ struct st {
     int n;
 
     vector<ll> vals; 
+
+	ll op(ll a, ll b) {
+		return a + b;
+	}
 
     void build(const vector<int> &arr, int x, int lx, int rx) {
         if (lx == rx) {
